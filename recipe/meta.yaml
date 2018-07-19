@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/skimr_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/skimr/skimr_{{ version }}.tar.gz
-  sha256: ea80194ecae85cd328e4128a1b0c4ff3e3c781789c8da975bad8d0adc82735bf
+  sha256: bb082721cc5ef8e90c65f4b31180a77c353352b1b6e8f3eb8dcf70827dfedab0
 
 build:
   number: 0
