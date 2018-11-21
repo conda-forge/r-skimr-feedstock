@@ -14,9 +14,8 @@ Summary: A simple to use summary function that can be used with pipes and displa
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-skimr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-skimr-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-skimr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-skimr-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-skimr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-skimr-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-skimr-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-skimr-feedstock)
 
 Current release info
 ====================
