@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skimr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skimr/skimr_{{ version }}.tar.gz
-  sha256: 9342691026ae1575d0f30023eafa0aae72a68c5ff347942f36572fd1b5eaec26
+  sha256: 693aa28a1390941000e1051cd68bcfe1fe86241b19dee3a831ff54d23792757d
 
 build:
   merge_build_host: True  # [win]
