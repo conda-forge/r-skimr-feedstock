@@ -1,13 +1,13 @@
 About r-skimr
 =============
 
-Home: https://github.com/ropenscilabs/skimr
+Home: https://docs.ropensci.org/skimr (website), https://github.com/ropensci/skimr
 
 Package license: GPL-3
 
 Feedstock license: BSD 3-Clause
 
-Summary: A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be  modified by the user as can the default formatting. Support for data frames  and vectors is included, and users can implement their own skim methods for specific object types as described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on  specific operating systems are given in the "Using skimr" vignette and the  README.
+Summary: A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be modified by the user as can the default formatting. Support for data frames and vectors is included, and users can implement their own skim methods for specific object types as described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on specific operating systems are given in the "Using skimr" vignette and the README.
 
 
 
@@ -117,5 +117,4 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@philip-khor](https://github.com/philip-khor/)
 
