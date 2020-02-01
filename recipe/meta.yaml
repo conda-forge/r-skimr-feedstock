@@ -37,6 +37,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-withr
   run:
     - r-base
     - r-cli
@@ -51,6 +52,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-withr
 
 test:
   commands:
