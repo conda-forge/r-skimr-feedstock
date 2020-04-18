@@ -1,4 +1,4 @@
-{% set version = "2.1" %}
+{% set version = "2.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skimr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skimr/skimr_{{ version }}.tar.gz
-  sha256: 256eafa98cd810e185b29f2fee63184d8eb17a6e8591ffcef30878c4ff3288a1
+  sha256: 500758a029d6c8fd3e5d1463e91cebe9420cd1be1349824c2bb7b8f295f45a5c
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -37,6 +37,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-vctrs
     - r-withr
   run:
     - r-base
@@ -52,6 +53,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-vctrs
     - r-withr
 
 test:
@@ -61,17 +63,14 @@ test:
 
 about:
   home: https://docs.ropensci.org/skimr (website), https://github.com/ropensci/skimr
-  license: GPL-3
-  summary: A simple to use summary function that can be used with pipes and displays nicely in
-    the console. The default summary statistics may be modified by the user as can the
-    default formatting. Support for data frames and vectors is included, and users can
-    implement their own skim methods for specific object types as described in a vignette.
-    Default summaries include support for inline spark graphs. Instructions for managing
-    these on specific operating systems are given in the "Using skimr" vignette and
-    the README.
+  license: GPL-3.0-only
+  summary: A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be modified by the
+    user as can the default formatting. Support for data frames and vectors is included, and users can implement their own skim methods for specific object types
+    as described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on specific operating systems are given
+    in the "Using skimr" vignette and the README.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
