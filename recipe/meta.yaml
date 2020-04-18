@@ -37,6 +37,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-vctrs
     - r-withr
   run:
     - r-base
@@ -52,6 +53,7 @@ requirements:
     - r-tibble >=2.0.0
     - r-tidyr >=1.0
     - r-tidyselect >=0.2.5
+    - r-vctrs
     - r-withr
 
 test:
