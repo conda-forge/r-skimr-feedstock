@@ -3,7 +3,7 @@ About r-skimr
 
 Home: https://docs.ropensci.org/skimr (website), https://github.com/ropensci/skimr
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: BSD 3-Clause
 
