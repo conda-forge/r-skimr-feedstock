@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skimr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skimr/skimr_{{ version }}.tar.gz
-  sha256: 500758a029d6c8fd3e5d1463e91cebe9420cd1be1349824c2bb7b8f295f45a5c
+  sha256: f0e70fe8c6ebd365fbb091fd0f3805749a6e73f77eca595c0a343058926bcc14
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -64,10 +64,8 @@ test:
 about:
   home: https://docs.ropensci.org/skimr (website), https://github.com/ropensci/skimr
   license: GPL-3.0-only
-  summary: A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be modified by the
-    user as can the default formatting. Support for data frames and vectors is included, and users can implement their own skim methods for specific object types
-    as described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on specific operating systems are given
-    in the "Using skimr" vignette and the README.
+  summary: A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be modified by the user as can the default formatting. Support for data frames and vectors is included, and users can implement their own skim methods for specific object types as
+    described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on specific operating systems are given in the "Using skimr" vignette and the README.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
